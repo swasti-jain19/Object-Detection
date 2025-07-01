@@ -1,0 +1,15 @@
+opencv-python-course-computer-vision-master\
+├── data\                         ← ✅ 1. root data folder
+│   └── monkey.mp4
+│
+└── 01_io\
+    ├── code\
+    │   └── io_image.py           ← 🔹 you're here
+    │
+    └── data\                     ← ✅ 2. nested data folder
+        └── bird.jpeg
+
+
+bird_path = os.path.join('..', 'data', 'bird.jpeg')   // same folder
+bird_path = os.path.join('..', '..', 'data', 'monkey.mp4')  // root folder 
+
